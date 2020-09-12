@@ -178,7 +178,8 @@ def user_stats(df):
     print('-'*40)
 
 
-
+    # TO DO: Displaying row data.
+    # It shows 5 lines each time. 
 def printing_row_data(df):
         row=0
         raw_data =input('Would you like to see 5 raw data lines? Yes or No?\n')
