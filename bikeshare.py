@@ -40,7 +40,6 @@ def get_filters():
     print('-'*40)
     return city, month, day
 
-    # I took the 'load_data' part from exercise question 3.
 def load_data(city, month, day):
     # load data file into a dataframe
     df = pd.read_csv(CITY_DATA[city])
@@ -75,17 +74,14 @@ def time_stats(df):
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
-    # TO DO: display the most common month
     most_common_month = df['month'].mode()[0]
     print('The most common month is', most_common_month)
 
 
-    # TO DO: display the most common day of week
     most_common_day = df['day_of_week'].mode()[0]
     print('The most common day is', most_common_day)
 
 
-    # TO DO: display the most common start hour
     most_common_start_hour = df['hour'].mode()[0]
     print('The most common start hour is', most_common_start_hour)
 
