@@ -164,9 +164,7 @@ def user_stats(df):
     #We can also change the user_stats function as 'user_stats(df,city) to display the name of the city.'
 
 
-    # TO DO: Display earliest, most recent, and most common year of birth
-    # I used 'an if statement' to check the data of the column has value, as Washington has no birth date data. I searched on stack everflow to be sure of the usage.
-    # https://stackoverflow.com/questions/24870306/how-to-check-if-a-column-exists-in-pandas
+
     if 'Birth Year' in df.columns:
         earliest_year_of_birth = df['Birth Year'].min()
         most_recent_year_of_birth = df['Birth Year'].max()
