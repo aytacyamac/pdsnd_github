@@ -1,15 +1,14 @@
 ### Date created
-Include the date you created this project and README file.
+12.09.2020
 
 ### Project Title
-Replace the Project Title
+Explore US Bikeshare Data
 
 ### Description
-Describe what your project is about and what it does
+The project calculates some information such as favorite time, favorite station,trip duration stats about New York, Chicago and Washington using python.
 
 ### Files used
-Include the files used
+The bikeshare data of cities New York, Chicago and Washington are used in the project.
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+I used stacoverflow.com for some of my problems.
