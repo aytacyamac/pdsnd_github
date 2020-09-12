@@ -117,7 +117,6 @@ def trip_duration_stats(df):
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
 
-    # TO DO: display total travel time
     total_time = df['Trip Duration'].sum()
     print('Total travel time in seconds is: ', total_time,'\n')
     print('This information can also be translated into minutes,hours and days.\n')
@@ -126,7 +125,6 @@ def trip_duration_stats(df):
     print('Total travel time in days is: ', total_time/86400)
 
 
-    # TO DO: display mean travel time
     mean_time = df['Trip Duration'].mean()
     print('Mean travel time in seconds is: ', mean_time)
 
@@ -157,9 +155,7 @@ def user_stats(df):
     #We can also change the user_stats function as 'user_stats(df,city) to display the name of the city.'
 
 
-    # TO DO: Display earliest, most recent, and most common year of birth
-    # I used 'an if statement' to check the data of the column has value, as Washington has no birth date data. I searched on stack everflow to be sure of the usage.
-    # https://stackoverflow.com/questions/24870306/how-to-check-if-a-column-exists-in-pandas
+
     if 'Birth Year' in df.columns:
         earliest_year_of_birth = df['Birth Year'].min()
         most_recent_year_of_birth = df['Birth Year'].max()
@@ -175,7 +171,8 @@ def user_stats(df):
     print('-'*40)
 
 
-
+    # TO DO: Displaying row data.
+    # It shows 5 lines each time. 
 def printing_row_data(df):
         row=0
         raw_data =input('Would you like to see 5 raw data lines? Yes or No?\n')
